@@ -45,6 +45,18 @@ This will create a project based on [the default Ember.js app blueprint](https:/
 ember new -b @ember/octane-app-blueprint <app-name>
 ```
 
+Beyond this, all I've done is...
+
+Installed a few packages like
+
+- [ember-cli-tailwind](https://github.com/embermap/ember-cli-tailwind)
+- [ember-on-modifier](https://github.com/buschtoens/ember-on-modifier)
+- [ember-cli-pretender](https://github.com/rwjblue/ember-cli-pretender)
+
+```sh
+ember install ember-cli-tailwind ember-on-modifier ember-cli-pretender
+```
+
 ## ⌨️ Task: Installing dependencies
 
 The goal of this task is to install the dependencies listed in your package.json. 
