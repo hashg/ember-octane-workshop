@@ -15,6 +15,7 @@ For now, paste the following HTML in [`app/templates/application.hbs`](../app/te
 <summary>Click to show <code>starter.html</code></summary>
 
 ```hbs {starter-file=starter.html}
+<div class="flex">
 <!-- Team Selector -->
 <nav
   class="team-selector bg-indigo-darkest border-indigo-darkest border-r-2 pt-2 text-purple-lighter flex-none hidden sm:block">
@@ -223,6 +224,7 @@ For now, paste the following HTML in [`app/templates/application.hbs`](../app/te
     </form>
   </footer>
 </main>
+</div>
 ```
 
 </details>
