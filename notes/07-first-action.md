@@ -172,8 +172,14 @@ The way the DOM API works, event handlers are called with `this` as the DOM elem
 
 To fix this, we'll have to `bind` the `onLoginFormSubmit` method, so that no matter who invokes it or how, `this` will always be the component instance. In Ember Octane, this can be done easily by applying the **action decorator**
 
+First, import the @action decorator in app/components/login-form.js
+
 ```js
+
 import { action } from '@ember/object';
+```
+
+```js
 
 /**
  * Handle the form submit event
