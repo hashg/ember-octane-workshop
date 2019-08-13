@@ -61,6 +61,8 @@ First, let's flesh out the service so that we can use it in a few places.
 
 ```js
 import Service from '@ember/service';
+import { inject as service } from '@ember/service';
+import Router from 'shlack/router';
 
 export default class AuthService extends Service {
   /**
@@ -73,12 +75,12 @@ export default class AuthService extends Service {
    * @param {string} userId
    */
   loginWithUserId(userId) {
-    window.localStorage.setItem(AUTH_KEY, userId);
+    window.localStorage.setItem("AUTH_KEY", userId);
     this.router.transitionTo('teams');
   }
 
   get currentUserId() {
-    return window.localStorage.getItem(AUTH_KEY);
+    return window.localStorage.getItem("AUTH_KEY");
   }
 }
 ```
